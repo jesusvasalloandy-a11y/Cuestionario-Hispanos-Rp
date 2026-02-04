@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hispano RP - Onboarding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-color: #bc13fe;
+            --bg-dark: #0f0f19;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                              url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .logo-container img {
+            width: 180px;
+            filter: drop-shadow(0 0 15px var(--neon-color));
+        }
+
+        .intro-text {
+            max-width: 600px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #ccc;
+            margin-bottom: 30px;
+            background: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        form {
+            background: rgba(15, 15, 25, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--neon-color);
+            box-shadow: 0 0 30px rgba(188, 19, 254, 0.2);
+            width: 100%;
+            max-width: 650px;
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            color: var(--neon-color);
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.4em;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #eee;
+        }
+
+        .tip {
+            font-size: 0.85em;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background: #05050a;
+            color: white;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        .checkbox-group {
+            background: #1a1a2e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .checkbox-item input {
+            margin-right: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(45deg, var(--neon-color), #5a12ff);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            box-shadow: 0 0 25px var(--neon-color);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="https://i.ibb.co/XfqyvH6W/IMG-5690.png" alt="Hispano RP Logo">
+    </div>
+
+    <div class="intro-text">
+        <em>Bienvenido a Hispanos RP. Este cuestionario asegura que estás listo para el mundo de Los Santos. [span_2](start_span)Responde honestamente para ayudarnos a darte la mejor experiencia.</em>[span_2](end_span)
+    </div>
+
+    <form>
+        <h2>1. Introducción</h2>
+        <div class="input-group">
+            <label>¿Cuál es tu motivo principal para unirte? (Eje: Historia, comunidad, etc.)</label>
+            <input type="text" required>
+        </div>
+
+        <div class="input-group">
+            <label>¿Has hecho Roleplay antes? (FiveM, RageMP, etc.)</label>
+            <span class="tip">Si es así, descríbelo brevemente.</span>
+            <textarea rows="3"></textarea>
+        </div>
+
+        <h2>2. Reglas y Etiqueta</h2>
+        <div class="input-group">
+            <label>¿Entiendes y aceptas seguir estas reglas?</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item"><input type="checkbox"> No usar información fuera de juego (Metagaming).</div>
+                <div class="checkbox-item"><input type="checkbox"> No actuar de forma irreal (Powergaming).</div>
+                <div class="checkbox-item"><input type="checkbox"> Respetar a todos los jugadores (No acoso).</div>
+                <div class="checkbox-item"><input type="checkbox"> No matar al azar (RDM/VDM).</div>
+            [span_3](start_span)</div>[span_3](end_span)
+        </div>
+
+        <h2>3. Conceptos Básicos</h2>
+        <div class="input-group">
+            <label>Escenario: Ves a un novato siendo asaltado. ¿Cómo lo manejas en rol?</label>
+            [span_4](start_span)<textarea rows="3" placeholder="Usa /me, describe tus acciones..."></textarea>[span_4](end_span)
+        </div>
+
+        <h2>4. Desarrollo de Personaje</h2>
+        <div class="input-group">
+            <label>Cuéntanos sobre tu personaje (Nombre, metas, debilidades...)</label>
+            <span class="tip">No se permiten "Superhéroes". [span_5](start_span)Buscamos profundidad.</span>[span_5](end_span)
+            <textarea rows="4"></textarea>
+        </div>
+
+        <h2>5. Preferencias</h2>
+        <div class="input-group">
+            <label>¿Qué es lo que más te interesa del servidor?</label>
+            <select>
+                <option>Trabajos Legales (Economía)</option>
+                <option>Bandas y Crimen</option>
+                <option>Eventos y Socialización</option>
+                <option>Sistema de Vehículos</option>
+            [span_6](start_span)</select>[span_6](end_span)
+        </div>
+
+        <button type="button">Enviar Postulación</button>
+    </form>
+
+</body>
+</html>
